@@ -1,0 +1,580 @@
+Statistic interview question:-
+
+Interview Problems
+
+1. Discuss algorithms for parallel matrix multiplication.
+ https://cse.bualo.edu/faculty/miller/Courses/CSE633/Ortega-Fall-2012-CSE633.pdf
+ https://www.tutorialspoint.com/parallel algorithm/matrix multiplication.htm
+ https://www3.nd.edu/ zxu2/acms60212-40212/Lec-07-3.pdf
+
+
+2. Design a risk and asset pricing model for tech startup equity.
+ https://www.startups.co/articles/startup-equity-101
+ https://www.investopedia.com/terms/c/capm.asp
+ https://www.investopedia.com/articles/personal-nance/050515/how-calculate-beta-
+private-company.asp
+ https://www.nancierworldwide.com/are-we-pricing-private-equity-risk-properly/s
+
+
+3. Discuss ordinary least squares (OLS), maximum likelihood (MLE), and maximum a posteriori
+(MAP) estimation.
+ https://en.wikipedia.org/wiki/Ordinary least squares
+ https://en.wikipedia.org/wiki/Proofs involving ordinary least squares
+ https://en.wikipedia.org/wiki/Maximum likelihood estimation
+ https://en.wikipedia.org/wiki/Maximum a posteriori estimation
+ https://stats.stackexchange.com/questions/80424/sum-of-squared-dierence-
+and-gaussian-noise-model/80564#80564
+
+
+4. A horizontal stick is one metre long. Fifty ants are placed in random positions on the stick,
+pointing in random directions. The ants crawl head rst along the stick, moving at one metre
+per minute. If an ant reaches the end of the stick, it falls o. If two ants meet, they both
+change direction. How long do you have to wait to be sure that all the ants have fallen o
+the stick?
+ https://math.stackexchange.com/questions/1036902/interesting-question-on-ants
+ https://math.stackexchange.com/questions/1418351/random-ants-probability-question
+5. Design a data structure for storing an integer-weighted probability distribution. Discuss
+runtime tradeos for dierent designs.
+ https://www.geeksforgeeks.org/random-number-generator-in-arbitrary-probability-
+distribution-fashion/
+ https://softwareengineering.stackexchange.com/questions/150616/get-weighted-
+random-item
+ https://cs.stackexchange.com/questions/59690/is-this-probability-distribution-
+data-structure-already-discovered
+3
+
+
+6. Given a signal, which is regularly sampled over time and is \noisy", how can the noise
+be reduced while minimizing the changes to the original signal? The standard method
+is with a Fourier transform. What is the intuition for why it works? Can one optimize
+hyperparameters for terms of the transform that sit inside the sum?
+ https://exnumerus.blogspot.com/2011/12/how-to-remove-noise-from-signal-using.html
+Solution. The simple answer is no. Sine and cosine are periodic, so one can not use convex
+optimization techniques.
+
+
+7. There are N lions and 1 sheep in a eld. All the lions really want to eat the sheep, but the
+problem is that if a lion eats a sheep, it becomes a sheep. A lion would rather stay a lion
+than be eaten by another lion. There is no other way for a lion to die than to become a
+sheep and then be eaten. When is it safe for any lion to eat?
+ https://math.stackexchange.com/questions/937410/understanding-the-solution-of-a-
+riddle-about-lions-and-sheep
+
+
+
+8. What are some pros and cons of using daily returns data versus monthly returns data?
+ https://stats.stackexchange.com/questions/124404/why-monthly-stock-returns-
+instead-of-daily-returns-in-multiple-regressions
+ https://www.elds.utoronto.ca/programs/scientic/09-10/bachelier/ talks/Sat/
+Varley/bfs80groth.pdf
+ https://www.quora.com/Should-I-use-daily-monthly-or-yearly-returns-in-portfolio-
+variance-calculations-when-calculating-relevant-means-variances-exces-returns-covar
+
+
+9. What is the geometric interpretation of regression?
+ https://www.datasciencecentral.com/proles/blogs/linear-regression-geometry
+ https://www.youtube.com/watch?v=oWuhZuLOEFY
+ https://www.youtube.com/watch?v=PbyP3goun2Y
+ https://www.youtube.com/watch?v=444ZkgiHI3Q
+ https://en.wikipedia.org/wiki/Regression analysis
+
+
+10. Calculate the correlation of two vectors and write the code in Python.
+ https://en.wikipedia.org/wiki/Pearson correlation coecient
+ https://en.wikipedia.org/wiki/Correlation and dependence
+ https://stackover
+ow.com/questions/19428029/how-to-get-correlation-of-
+two-vectors-in-python
+
+
+11. Design a research that uses dividend cut as a variable of interest.
+ https://www.investopedia.com/ask/answers/06/dividendpaymentcut.asp
+ https://www.investopedia.com/trading/dividends-interest-rates-eect-stock-options/
+
+
+12. A population dies out with p = 0:2. It remains stable with p = 0:5. It doubles with p = 0:3.
+What is the expected long term behavior of the population?
+4
+ https://en.wikipedia.org/wiki/Markov chain
+ https://en.wikipedia.org/wiki/Stochastic matrix
+ https:// drive.google.com/le/d/1BydxM4mZNc4rUHF5VAZQDshY8xbfWzmL/
+view?usp=sharing
+Solution. This is a classic Markov chain problem. A transition probability matrix solves this
+easily.
+
+
+13. Given a matrix of correlations, write an algorithm to cluster the stocks with correlation equal
+to a certain value.
+ https://www.cs.princeton.edu/sites/default/les/uploads/karina marvin.pdf
+ https://arxiv.org/pdf/1511.07945.pdf
+ http://www.diva-portal.org/smash/get/diva2:196577/FULLTEXT01.pdf
+ https://en.wikipedia.org/wiki/Correlation clustering
+ https://quant.stackexchange.com/questions/2263/how-to-cluster-stocks-and-
+construct-an-anity-matrix
+ https://en.wikipedia.org/wiki/K-nearest neighbors algorithm
+Solution. A basic idea is to use the k-nearest-neighbors algorithm.
+
+
+14. Discuss correlation matrices with panel data.
+ https://stackover
+ow.com/questions/47886162/correlation-matrix-for-panel-data
+ https://www.researchgate.net/post/correlation matrix for variables in panel data
+ https://www.statalist.org/forums/forum/general-stata-discussion/general/1432235-
+correlation-matrix-in-panel-data-model
+
+
+15. Discuss problems with multiple inheritance in Java.
+ http://www.lambdafaq.org/what-about-the-diamond-problem/
+ https://www.geeksforgeeks.org/java-and-multiple-inheritance/
+ https://www.journaldev.com/1775/multiple-inheritance-in-java
+ https://javapapers.com/core-java/why-multiple-inheritance-is-not-supported-in-java/
+
+
+16. What are the dierences between Python lists and Java arrays?
+ https://www.pythoncentral.io/the-dierence-between-a-list-and-an-array/
+ https://stackover
+ow.com/questions/27769511/python-list-vs-java-array-eciency
+ https://stackover
+ow.com/questions/33978318/arraylist-in-java-vs-list-in-python
+ https://www.quora.com/How-do-I-think-about-an-array-in-Java-or-a-list-in-Python
+
+
+
+17. If someone comes up to you with a new factor, how would you consider incorporating it into
+an existing factor model?
+ https://www.investopedia.com/terms/m/multifactor-model.asp
+5
+ https://en.wikipedia.org/wiki/Multiple factor models
+ https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-
+applications-in-nance-fall-2013/lecture-notes/MIT18 S096F13 lecnote15.pdf
+ https://faculty.washington.edu/ezivot/research/factormodellecture handout.pdf
+ https://web.stanford.edu/ wfsharpe/mia/fac/mia fac3.htm
+
+
+
+18. Design an algorithm to play Connect 4.
+ https://connect4.gamesolver.org/
+ http://blog.gamesolver.org/solving-connect-four/01-introduction/
+ http://web.mit.edu/sp.268/www/2010/connectFourSlides.pdf
+ https://roadtolarissa.com/connect-4-ai-how-it-works/
+
+
+19. Write a recursive function to compute the number of partitions of a natural number.
+ https://stackover
+ow.com/questions/14053885/integer-partition-
+algorithm-and-recursion
+ This is also a classic generating function problem.
+ https://www.overleaf.com/read/sbtmxdddtnzy
+
+
+
+20. Given some regression lters, talk about their upsides and downside versus principal compo-
+nent analysis and other dimensionality reduction techniques.
+ https://en.wikipedia.org/wiki/Principal component analysis
+ https://en.wikipedia.org/wiki/Dimensionality reduction
+ https://dsp.stackexchange.com/questions/19962/linear-regression-lter-properties
+ http://faculty.chicagobooth.edu/bryan.kelly/research/pdf/forecasting theory.pdf
+
+
+
+21. Design a neural network, hidden Markov model, or state machine to solve the knight's tour
+problem.
+ https://dmitrybrant.com/knights-tour
+ https://math.stackexchange.com/questions/87991/knights-tour-as-a-neural-network
+ http://www.jamesphoughton.com/2013/09/14/knights-hidden-path-0-
+hidden-markov.html
+ http://stanford.edu/ cpiech/cs221/handouts/practiceMidterms.html
+ https://community.computingatschool.org.uk/les/6118/original.pdf
+ https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=https://www.google.com/
+&httpsredir=1&article=8383&context=etd theses
+ https://en.wikipedia.org/wiki/Finite-state machine
+
+
+22. Given a dictionary of words and a string, generate all valid anagrams.
+ https://stackover
+ow.com/questions/20680145/best-algorithm-to-nd-anagram-
+of-word-from-dictonary
+6
+ https://stackover
+ow.com/questions/25298200/given-a-dictionary-and-a-list-of-letters-
+nd-all-valid-words-that-can-be-built
+
+
+
+23. You have 12 balls that appear identical. However, one is a dierent weight from the others
+(could be either lighter or heavier). You also have a balance scale. With only three weighs
+on the scale, devise a method to nd the odd ball and determine if it is heavier or lighter.
+ https://www.mathsisfun.com/pool balls solution.html
+
+
+
+24. You are given two unfair coins. You 
+ip both of them and ones comes up heads 2
+3 of the
+time while the other comes up heads 1
+3 of the time. Given you had a uniform prior on the
+bias before 
+ipping, what is the probability that the rst coin is more biased than the second
+coin?
+ https://math.stackexchange.com/questions/1114093/why-would-a-uniform-
+prior-distribution-give-a-dierent-result-than-a-purely-fre
+ https://www.probabilisticworld.com/calculating-coin-bias-bayes-theorem/
+ https://stats.stackexchange.com/questions/291955/bayesian-biased-prior-formula
+ https://math.stackexchange.com/questions/1689448/
+statistical-testing-of-a-biased-coin
+
+
+
+25. What is the expected number of draws from a standard deck until you see an ace?
+ https://math.stackexchange.com/questions/1138853/
+expected-number-of-cards-you-should-turn-before-nding-an-ace
+26. You are given two eggs, and access to a 100-story building. Both eggs are identical. The
+aim is to nd out the highest 
+oor from which an egg will not break when dropped out of a
+window from that 
+oor. If an egg is dropped and does not break, it is undamaged and can
+be dropped again. However, once an egg is broken, thats it for that egg. Generalize for any
+number of eggs and 
+oors and code the problem with dynamic programming.
+ https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/
+ http://datagenetics.com/blog/july22012/index.html
+27. Aaron samples from the Uniform(0,1) distribution. Then Brooke repeatedly samples from
+the same distribution until she obtains a number higher than Aaron's. How many samples
+is she expected to make?
+Solution. Call Aaron's number a (with associated random variable A) and let B be a random
+variable that represents Brooke's sample at any given point. We know that P(B < a) = a,
+P(B > a) = 1 􀀀 a, and of course P(B = a) = 0, as it is a continuous distribution. We now
+nd the conditional expectation from the geometric distribution. Since the probability of
+getting a number higher than Aaron's is 1􀀀a, we expect 1
+1􀀀a samples. Note that this is the
+conditional expectation of the number of samples given the event A = a, not the nal answer.
+We now nd the unconditional expectation of the number of samples. To do this, let N be
+a random variable that represents the unconditional number of samples before exceeding A.
+7
+We have calculated E[NjA = a] = 1
+1􀀀a . To nd E[N] explicitly, we must invoke the Law of
+Iterated Expectation. This can be done by noting E[NjA] = 1
+1􀀀A. Thus,
+E[N] = E[E[NjA]] = E
+
+1
+1 􀀀 A
+
+:
+Since the function N = 1
+1􀀀A = g(A) is monotonically increasing on (0; 1), it has an inverse on
+the interval. We can use the inverse function method to nd the distribution of N = g(A).
+fN(n) = fA(g􀀀1(n))
+d
+dn
+g􀀀1(n) = 1 
+d
+dn
+
+n 􀀀 1
+n
+
+=
+1
+n2 for 0 < n < 1:
+Thus, we can conclude
+E[N] =
+X1
+n=1
+1
+n2 =
+2
+6
+:
+The last line arises from the classic Basel problem result.
+28. You are given n unit vectors in n-dimensional space. Find a vector that forms the same angle
+to all of them.
+Solution. We rst present a less ecient solution. Consider the (n􀀀1)-sphere that intersects
+the end of all of the vectors. Find the center of this sphere and then solve n equations in n
+variables.
+Now for a more clever solution. Call our desired vector w and the vectors vi for i = 1; : : : ; n.
+Note that w  (vi 􀀀 vj) = 0 for all i 6= j. This is because w makes the same angle to all
+vi's. Thus, w is orthogonal to span(vi 􀀀 v1) for all 2  i  n. Compute this subspace you
+are done, and it can be done in O(n) time with the Gram-Schmidt process to nd a fully
+orthogonal vector.
+29. You have a strategy with supposed Sharpe ratio 8. After n days it has lost money. What
+does n have to be before you reject the hypothesis that the Sharpe is 8?
+ https://www.investopedia.com/terms/s/sharperatio.asp
+ https://stats.stackexchange.com/questions/155223/testing-sharpe-ratio-signicance
+ http://www.econ.uzh.ch/static/wp iew/iewwp320.pdf
+30. What are some methods to prevent overtting?
+Solution. Add more data, use data augmentation, use models that generalize well, add regu-
+larization, reduce model complexity, cross-validation, early stopping, ensemble methods such
+as bootsrapping or bagging (not going to add links for all of these but one should be familiar
+with all of them).
+31. Given two sorted arrays of integers of lengths m and n where m << n, nd their intersection
+in O
+􀀀
+n log
+􀀀m
+n
+
+time.
+ https://articles.leetcode.com/here-is-phone-screening-question-from/
+ https://siderite.blogspot.com/2016/08/nding-intersection-of-two-large.html
+ https://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/
+8
+32. Find the expected number of cycles of length greater than n
+2 in a random permutation of
+f1; : : : ; ng.
+ https://math.stackexchange.com/questions/73550/the-limit-of-truncated-sums-of-harmonic-
+series-lim-limits-k-to-infty-sum-n
+33. Devise a way to uniformly sample from a disk. Then do it without square rooting.
+ http://mathworld.wolfram.com/DiskPointPicking.html
+ https://667-per-cm.net/2016/09/23/
+uniform-sampling-of-a-disk-and-implications-for-sampling-the-internet/
+ https://math.stackexchange.com/questions/927347/uniform-distribution-over-disk
+34. Find the eigenvalues of an n  n matrix with n0s on the diagonal and 1's everywhere else
+ https://math.stackexchange.com/questions/175228/
+suppose-a-is-an-n-by-n-matrix-with-its-diagonal-entries-are-n-and-other-entries
+35. Given i.i.d. random variables X; Y  N(0; 1), nd the conditional distribution of X given
+that X + Y > 0. Prove this is a valid probability distribution.
+Solution. The sum of i.i.d. normal variables is also normal. One can prove this with moment
+generating functions. The distribution of X + Y is N(0 + 0; 1 + 1) = N(0; 2). Use this
+distribution to nd the conditional distribution.
+36. Implement a stack with two queues. Then do it with one queue (the dumb way).
+Solution. Move everything from one queue to the next except for the last element, then
+return the last element. Continue doing this by alternating the queues. This can be done
+with two loops. The dumb way with one queue is to try queue.push(queue.pop()) n 􀀀 1
+times and then do queue.pop().
+37. Eciently nd (and then program) a way to nd a number that uses each of the digits
+1; : : : ; 9 exactly once and such that the number determined by the rst k digits is divisible
+by k for all k 2 f1; : : : ; 9g.
+ http://mathforum.org/library/drmath/view/56742.html
+38. Create a classier for data using a support-vector machine.
+ https://en.wikipedia.org/wiki/Support-vector machine
+ https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93
+ http://web.mit.edu/zoya/www/SVM.pdf
+ https://www.svm-tutorial.com/
+39. Your friend claims he can tell the ve colors of skittles apart by taste alone. The probability
+of a skittle being any particular color is 1
+5 . You give your friend 3 skittles and he gets 2
+correct. Should you believe him? What if you give him 100 and he gets 40 correct?
+ https://www.channelreball.com/articles/magic-math-how-many-games-do-you-need-
+for-statistical-signicance-in-playtesting/
+9
+Solution. This is a classic hypothesis testing problem. Test the null of p = 0:2 versus p > 0:2.
+Then use the normal approximation from the binomial distribution or a binomial distribution
+calculator.
+40. Fast mental mathematics questions:
+ What is 0:5382 􀀀 0:332?
+ Calculate 1
+2 + 1
+4 + 1
+16 .
+ Calculate 23  21.
+ https://www.intmath.com/blog/letters/intmath-newsletter-wus-squaring-trick-
+patrickjmt-google-calculus-8858
+ https://www.quora.com/Whats-a-math-trick-that-is-not-very-well-known
+41. Discuss how you would model the acquaintance graph of the United States. Use this model
+to guess the average degree of a vertex over this graph.
+ https://www.princeton.edu/ mjs3/mccormick salganik zheng10.pdf
+ http://www.stat.columbia.edu/ gelman/research/published/DiPreteetal.pdf
+42. Given two data sets X and Y , we run two linear regressions to obtain y  ax + b and
+x  cy + d. What are the bounds on ac?
+ https://en.wikipedia.org/wiki/Simple linear regression
+Solution. For simplicity one can assume that both data sets have mean 0, as they can always
+be scaled to mean 0. Then we simply use the covariance denition of slope and nish with
+the Cauchy-Schwarz inequality on the sums. The bounds will be between 0 and 1.
+43. Give an example of two variables that are uncorrelated but dependent.
+ https://stats.stackexchange.com/questions/85363/simple-examples-of-uncorrelated-
+but-not-independent-x-and-y
+44. Choose n 􀀀 1 points randomly on a line segment and break the segment at those points.
+What is the probability that the resulting n segments form an n-gon?
+ https://math.stackexchange.com/questions/2848881/the-probability-of-those-n-
+broken-parts-of-sticks-to-form-a-closed-polygon
+45. Estimation questions galore:
+ Weight of an average adult girae,
+ Number of US businesses that went bankrupt in 2014,
+ Largest change of temperature over one day in the US,
+ Weight of your phone if it was converted to solid gold,
+ Average global life expectancy of a woman,
+ 0:99100,
+ Smallest n such that n! has 100 digits,
+10
+ 33:8,
+ xx = 1000 estimate x,
+ ln(314).
+Solution. The majority of these are not intended for one to obtain an exact answer, but for
+discussion and mental evaluation. The numerical ones are a bit more interesting.
+For exponents, it is generally a good idea to use logarithms and then observe behaviors at
+small or large values. For instance, when estimating x = 0:99100, one can perform ln(x) =
+100 ln(0:99) = 100 ln(1 􀀀 0:01)  100(􀀀0:01). This is because for small x, ln(1 + x) is very
+close to x. Thus, ln(x)  􀀀1 and x  e􀀀1. This is very close to the actual answer.
+For the n! problem, the number of base-10 digits of an integer m is blog10(m)c + 1. We are
+looking for the smallest n such that blog10(n!)c  99. We can then change our base from 10
+to e and use Stirling's approximation to observe the growth of ln(n!).
+For 33:8, we will approach the problem two ways. Don't fall into the trap of thinking it is
+particularly close to 34, as exponentiation increases the number very quickly.
+1) We rst note that 33:8 = 34
+30:2 = 34
+5 p
+3
+= 81
+5 p
+3
+. We can estimate fth roots with a derivative
+trick. Let y = 5
+p
+3. Let x be the nearest fth power to 3, so x = 1 and we write y = (1+2)
+1
+5 .
+Here we can consider x = 2 and y = x
+1
+5 = 1. We are essentially taking the derivative of
+y = x
+1
+5 which is y0 = 5x􀀀4
+5 so we can note that y = x
+5x
+45
+= 2
+5 = 0:4. Thus, y + y =
+1 + 0:4 = 1:4 so 5
+p
+3  1:4 and 33:8  81
+1:4  57:857. However, this is not a good estimate, as
+our x is twice as large x itself.
+2) Observe the derivative of 3x directly, or 3x ln(3). Our estimate will be 34 􀀀 34 ln(3).
+To estimate ln(3), we can use a numerical method (https://math.stackexchange.com/
+questions/1179348/estimate-ln3-using-taylor-expansion-up-to-3rd-order) and we
+are done. This gives a much better approximation.
+We use a similar method for xx. Note that 44 = 256 and 55 = 3125 so 4 < x < 5. Also note
+the derivative is xx(ln(x)+1). We essentially wish to solve for x in 44 +44(ln(4)+1)x =
+1000. We can estimate ln(4) with the same method as the previous problem and we are done.
+For ln(314) we can again use a numerical method to approximate, but for a large number it
+can be tedious. Instead, note that ln does not grow particularly fast, and that 73 = 343 is
+close to 314. Thus, ln(314)  ln(73) = 3 ln(7). We can then approximate ln(7) much easier.
+46. You have $100 and are betting on a fair coin 
+ip. You can bet any percentage of the $100.
+If you win, you gain 1.2 times your bet (and your bet back), but if you lose, you lose your
+bet. What is the optimal bet size to maximize long-run expected earnings?
+ https://en.wikipedia.org/wiki/Kelly criterion
+Solution. We approach this problem analytically. Let f(x; y) represent the maximum ex-
+pected money the player can get starting with x red cards and y blue cards. Observing
+simpler cases, we can see that f(n; 0) = 2n, as there are no blue cards and the player simply
+doubles their money n times. Our goal is to nd a recurrence for f(n;m) with this base case.
+For the rst card, the player bets a proportion p of their money on red. p can be negative
+and this signies a bet for blue. Then there are two cases: the 
+ipped card is either red or
+blue.
+11
+Now let's observe f(n; 1). The prot if red is thus (1 + p)f(n 􀀀 1; 1), as the player wins
+and has 1 + p of what the player had before, then the process repeats sans one red card.
+The prot if blue is (1 􀀀 p)f(n; 0) since the player gains nothing and the process repeats
+sans one blue card. We have f(n; 1) = (1 + p)f(n 􀀀 1; 1) + (1 􀀀 p)f(n; 0) and in general
+f(n;m) = (1 + p)f(n 􀀀 1;m) + (1 􀀀 p)f(n;m 􀀀 1).
+Plugging in f(n; 0) = 2n, we get that f(n; 1) = 2n+1
+n+1 . Note that the proportion p does not
+even matter! In fact, the general form is
+f(n;m) =
+2n+m
+􀀀n+m
+n
+:
+Before we prove this, note how interesting it is that p does not matter. The only thing that
+matters is that when there is only one color remaining the player bets all their money. In
+fact, the other bets the player makes do not matter either.
+Observe
+􀀀n+m
+n
+
+. This is the number of possible orderings of the cards. The term 􀀀2n+m n+m
+n
+
+represents picking a random ordering and betting all of the player's money on it at every
+stage. If the player wins, they obtain $2n+m and the probability that they win is 􀀀 1 n+m
+n
+.
+Obviously this strategy has high variance, but it can be modied.
+The idea arises from observing the original recurrence f(n;m) = (1 + p)f(n 􀀀 1;m) + (1 􀀀
+p)f(n;m 􀀀 1). Note that setting p = n􀀀m
+m+n gives our desired result of 0 variance, and we can
+show that our expected prot stays the same. But this method is not particularly motivated.
+Instead, let us change our betting method. Previously we picked a random ordering of cards
+and bet on it, but we can also bet on all the ordering of cards equally and simultaneously.
+With n red and m blue, n
+n+m of the orderings start with red and m
+n+m start with blue. Betting
+the dierence of n􀀀m
+n+m on red every time clearly has 0 variance, as exactly one ordering will
+be correct every time. This correct bet will make $2n+m and 􀀀 1 n+m
+n
+ of your money will be
+bet on it. This is exactly the result obtained from the Kelly criterion.
+Miscellaneous Statistics Problems
+1. X and Y are i.i.d. N(0; 1) random variables. You are given that X > 0 and Y > 0. What
+is the probability that Y > X?
+Solution. The conditions make this very easy, as by symmetry the answer is simply 1
+2 .
+2. X and Y are i.i.d. N(0; 1) random variables. What's the probability that Y > 3X?
+Solution. Rearrange and see that we want P(Y 􀀀3X > 0). Note that the linear combination
+of i.i.d. normal variables is normal, so Y 􀀀 3X  N(0; 10). Thus, the probability is 1
+2 by
+symmetry.
+3. X and Y are i.i.d. N(0; 1) random variables. You are given that Y > 0. What is the
+probability that Y > 3X?
+Solution. The key is that N(0; 1)2 is cyclically symmetric. When plotting the distributions,
+the pdf will be cyclically symmetric about the origin. Then one can perform a geometric
+probability calculation to obtain an answer in terms of arctan.
+12
+4. How can one use the normal distribution to sample points uniformly from a disk? How can
+one use a uniform disk to sample points from a normal distribution?
+ https://en.wikipedia.org/wiki/Box%E2%80%93Muller transform
+Solution. For the rst part, sample x and y from N(0; 1). The ordered pair (x; y) can then
+be normalized. The points are cyclically symmetric, as probability of a point is proportional
+to e􀀀x2+y2
+2 so for xed x2 + y2 all points should have the same probability. For the second
+part, use the Box-Muller transformation.
+5. I 
+ip 10,000 identical coins and 5200 come up heads. Are my coins fair?
+Solution. Another classic hypothesis testing question. Test the null p = 0:5 against the
+alternative p > 0:5. Use a binomial distribution calculator or the normal approximation to
+nish. The coins have very low probability of being fair.
+6. Derive the analytical solution for linear regression  = (XTX)􀀀1XT y.
+ https://towardsdatascience.com/analytical-solution-of-linear-regression-a0e870b038d5
+Solution. The goal is to minimize the cost function J() = (y􀀀X)T (y􀀀X). Expand and
+dierentiate with respect to .
+7. I take n samples from a distribution. Why is the canonical best estimator for the mean the
+sample mean? Discuss estimators for the variance and standard deviation. What are the
+estimators that minimize bias? Are they dierent from the ones that minimize MSE?
+ https://en.wikipedia.org/wiki/Mean squared error
+ https://en.m.wikipedia.org/wiki/Bessel%27s correction
+Solution. The expected value of the sample mean is the mean. Furthermore, the MSE of the
+sample mean is always equal to the variance of the sample mean. Estimators that minimize
+bias are often dierent from the ones that minimize MSE. For particular estimators such as
+the one given by Bessel's correction, one may need to invoke the Central Limit Theorem.
+8. I have three random variables X, Y , and Z with pairwise correlations all equal to r. Whar are
+the bounds on r? What are the bounds on corr(X;Z) if corr(X; Y ) = a and corr(Y;Z) = b?
+ https://math.stackexchange.com/questions/284877/
+correlation-between-three-variables-question
+Solution. The Cauchy-Schwarz inequality can give us the answer with the classic \correlations
+are cosines" idea. However, this particular problem can also be solved with the correlation
+matrix, as correlation matrices are positive-semidenite. Our particular 3  3 correlation
+matrix has 1's along the diagonal and r's everywhere else. The eigenvalues are 􀀀1
+2 and 1
+which correspond to the minimum and maximum, respectively.
+9. Suppose one has two covariance matrices A and B. Is AB also a covariance matrix? What
+if AB = BA?
+ https://math.stackexchange.com/questions/982797/prove-that-the-product-of-two-
+positive-semidenite-and-symmetric-matrices-has-n
+13
+Solution. The essential argument is that AB must be symmetric for it to be a covariance
+matrix. Thus the answer to the rst part is no. AB = BA satises symmetry, so the problem
+boils down to whether it is positive-semidenite. One can establish that AB is similar to a
+positive semidenite matrix and therefore must be positive semidenite
+10. What happens to the coecient of determination (R2) when more independent variables are
+added to a regression model?
+Solution. Having more covariates will in general give a better t, however, this does not
+necessarily mean a better model (in terms of generalization). Thus, model comparison should
+be carried out at the end in terms of how the model explains the data (e.g., likelihood, R2,
+etc), and how simple the model is (i.e., Occam's razor). Overtting can also be potentially
+induced, so one can look at the BIC model selection criterion where having too many variables
+is penalized.
+Additional Problems on Glassdoor
+https://www.glassdoor.com/Interview/quant-interview-questions-SRCH KO0,5.htm
